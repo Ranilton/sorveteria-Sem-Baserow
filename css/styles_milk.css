@@ -1,0 +1,205 @@
+body,
+section {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--branco_gelo);
+}
+
+.img {
+  height: 80px;
+  border-radius: 50px;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(to right, var(--azul_escuro) 30%, var(--azul_claro) 50%);
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin-right: 20px;
+  color: var(--white);
+  font-weight: bolder;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border: 5px solid #ccc;
+  background-color: var(--azul_claro);
+}
+
+.TipoMilk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.ver_select {
+  display: flex;
+  border: 5px solid #ccc;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.ver_select img {
+  width: 25vh;
+}
+
+.ingredientes_1 {
+  display: flex;
+}
+
+.ingredientes {
+  text-align: left;
+  padding: 2px 5px 2px 5px;
+}
+
+.ingredientes div {
+  padding: 1px 0 1px 0;
+}
+
+.ingredientes>label {
+  /* display: block; */
+  margin: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: bolder;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Input + texto à esquerda, quantidade à direita */
+  margin: 15px 0;
+  font-weight: bolder;
+}
+
+/* -------------------------------------------------- */
+.titulos {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: black;
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid #ccc;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  height: 20px;
+}
+
+input[type="number"] {
+  height: 20px;
+  width: 100px;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #999;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="number"]:focus {
+  border-color: var(--rosa_chiclete);
+  outline: none;
+}
+
+.valorTotal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping {
+  background-color: var(--amarelo_creme);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  width: 25vh;
+  height: 50px;
+  margin: 15px;
+}
+
+.car {
+  width: 50px;
+  height: 50px;
+
+}
+
+.shopping:hover {
+  background-color: var(--rosa_chiclete);
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: flex;
+    /* Botão do menu aparece em telas pequenas */
+  }
+
+  .img {
+    height: 50px;
+  }
+
+  nav {
+    padding: 0 25px;
+  }
+
+  section {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .select img {
+    width: 20vh;
+  }
+
+  .ingredientes_1 {
+    flex-direction: column;
+  }
+
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .img {
+    height: 25px;
+  }
+}

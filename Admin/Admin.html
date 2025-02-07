@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_Admin.css">
+    <link rel="stylesheet" href="/css/General_Styles.css">
+    <title>Admin.</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="img" src="/assets/sorvemar.PNG" alt="SorveMar" />
+        <h1 class="logo">
+          Sorveteria <br />
+          Vasconcelos
+        </h1>
+        <a href="/html/index.html"><img class="img" src="/assets/icon_log.png"
+            alt="SorveMar" />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <h1>Tabela de Exemplo</h1>
+      <div class="tabela">
+        <section>
+          <table id="table1">
+            <thead>
+              <tr>
+                <th>Volumes</th>
+                <th>Notas</th>
+                <th>Valores</th>
+                <th>Imagens</th>
+                <th>Ativos/status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Dados serão preenchidos dinamicamente -->
+            </tbody>
+          </table>
+        </section>
+        <!--outra tabela-->
+        <section>
+          <table id="tabela2">
+            <thead>
+              <tr>
+                <th>Volumes</th>
+                <th>Notas</th>
+                <th>Valores</th>
+                <th>Imagens</th>
+                <th>status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="text" value="Milkshake 300ml" /></td>
+                <td><input type="text" value="2" /></td>
+                <td><input type="text" value="12,00" /></td>
+                <td><img class="imagens"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWBW1Gg7_rQb01KTW11TjbdCOtehGt6FV_VA&s"
+                    alt="Exemplo 1"></td>
+                <td><input type="checkbox" onchange="toggleStatus(this)" />
+                  ---</td>
+              </tr>
+              <tr>
+                <td><input type="text" value="Milkshake 300ml" /></td>
+                <td><input type="text" value="2" /></td>
+                <td><input type="text" value="12,00" /></td>
+                <td><img class="imagens"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWBW1Gg7_rQb01KTW11TjbdCOtehGt6FV_VA&s"
+                    alt="Exemplo 1"></td>
+                <td><input type="checkbox" onchange="toggleStatus(this)" />
+                  ---</td>
+              </tr>
+              <tr>
+                <td><input type="text" value="Milkshake 300ml" /></td>
+                <td><input type="text" value="2" /></td>
+                <td><input type="text" value="12,00" /></td>
+                <td><img class="imagens"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWBW1Gg7_rQb01KTW11TjbdCOtehGt6FV_VA&s"
+                    alt="Exemplo 1"></td>
+                <td><input type="checkbox" onchange="toggleStatus(this)" />
+                  ---</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+    <script src="script_Admin.js"></script>
+  </body>
+</html>

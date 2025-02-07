@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="/assets/icon_log.png" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles_milk.css">
+        <link rel="stylesheet" href="/css/General_Styles.css">
+        <title>Milkshake</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img class="img" src="/assets/sorvemar.PNG" alt="SorveMar" />
+                <h1 class="logo">
+                    Sorveteria <br />
+                    Vasconcelos
+                </h1>
+                <a href="index.html"><img class="img" src="/assets/icon_log.png"
+                        alt="SorveMar" />
+                </a>
+            </nav>
+        </header>
+        <h1>ESCOLHA O SEU MILKSHAKE</h1>
+        <section>
+            <div class="TipoMilk">
+                <label for="milk-tamanho">Milkshake:</label>
+                <select id="milk-tamanho" onchange="mostrarMilks()">
+                    <option value>Selecione</option>
+                    <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                </select>
+                <div class="ver_select">
+                    <div>
+                        <h1 id="milk-volume">Milkshake</h1>
+                        <h3 id="milk-preco">R$ 0,00</h3>
+                        <p id="milk-notas">notas</p>
+                    </div>
+                    <img id="milk-imagem" src="/assets/milkshake.png"
+                        alt="imagem do Milkshake">
+                </div>
+
+                <label for="milk-quantidade">Quantidade:</label>
+                <input type="number" id="milk-quantidade" min="1" value="1">
+
+            </div>
+            <!--milkshake sabores-->
+            <div class="ingredientes_1">
+                <div class="ingredientes">
+                    <label class="titulos">Escolha os Sabores:</label>
+                    <div class="sab" id="Sabores">
+                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredientes_1">
+                <div class="ingredientes">
+                    <label class="titulos">Coberturas:</label>
+                    <div class="sab" id="Coberturas">
+                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="valorTotal">
+                    <h3>valor Total=</h3>
+                    <h3>R$ 0,00</h3>
+                    <div id="milk_escolhido">
+                        <!--o milk escolhido deve ser mostrado aqui-->
+                    </div>
+                </div>
+                <button class="shopping">Salvar no Carrinho</button>
+                <a href="carrinho.html">
+                    <button class="shopping"><img class="car"
+                            src="/assets/shopping.png" alt="Carrinho"></button>
+                </a>
+            </div>
+        </section>
+
+        <script src="/js/script_milk.js"></script>
+    </body>
+
+</html>

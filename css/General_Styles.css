@@ -1,0 +1,47 @@
+/* :root {
+  --white: #fff;
+  --amarelo: rgba(170, 159, 7, 0.877);
+  --verde: rgba(31, 134, 0, 0.829);
+  --verde-escuro: rgb(48, 83, 2);
+  --red: #ff0000;
+  --preto: black;
+  --grd1: #6b0380;
+  --sorv_claro: rgb(13, 136, 218);
+  --sorv_escuro: rgb(78, 61, 236);
+  --acai_claro: rgb(145, 57, 185);
+  --acai_escuro: #710280;
+  --milk_claro: rgb(13, 136, 218);
+  --milk_escuro: rgb(78, 61, 236);
+} */
+
+:root {
+  /*(Azul (Base da Identidade Visual)*/
+  --azul_claro: #4DB6E1;
+  /*Remete a frescor e combina com a logo*/
+  --azul_escuro: #1E88E5;
+  /*Para elementos de destaque ou texto*/
+  /*Cores de Sorvetes e Milkshakes*/
+  --rosa_chiclete: #FF80AB;
+  /*Transmite doçura e apelo visual*/
+  --amarelo_creme: #FFD54F;
+  /*Lembra baunilha e caramelo*/
+  --marrom_claro: #8D6E63;
+  /*Associado ao chocolate ou doce de leite*/
+  /*Cores do Açaí e Frutas*/
+  --roxo_vibrante: #7E57C2;
+  /*Representa o açaí.*/
+  --verde_tropical: #81C784;
+  /*Sugere frescor e frutas naturais como guaraná ou kiwi.*/
+  /*Neutros de Contraste*/
+  --branco_gelo: #F9F9F9;
+  /*Para dar leveza e espaço visual*/
+  --cinza_suave: #E0E0E0;
+  /*Para elementos secundários, como menus e fundos*/
+
+  --white: #ffffff;
+  --azul: #0B5997;
+  --red: #cc0d0d;
+  --roxo_escuro: #9139b9;
+  --rosa: #ff9bbc;
+
+}

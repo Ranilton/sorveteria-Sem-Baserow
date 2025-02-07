@@ -1,0 +1,325 @@
+:root {
+  --white: #fff;
+  --amarelo: rgba(170, 159, 7, 0.877);
+  --verde: rgba(31, 134, 0, 0.829);
+  --verde-escuro: rgb(48, 83, 2);
+  --red: #ff0000;
+  --preto: black;
+  --grd1: #6b0380;
+  --sorv_claro: rgb(13, 136, 218);
+  --sorv_escuro: rgb(78, 61, 236);
+  --acai_claro: rgb(145, 57, 185);
+  --acai_escuro: #710280;
+  --milk_claro: rgb(13, 136, 218);
+  --milk_escuro: rgb(78, 61, 236);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaeb;
+}
+
+button {
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.img {
+  height: 80px;
+  border-radius: 50px;
+}
+
+header {
+  background-color: #f8f8f8;
+  background: linear-gradient(to right, var(--grd1) 30%, #6fb9eb 70%, #e6f8fa) 20%;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin-right: 20px;
+  color: var(--white);
+  font-weight: bolder;
+  text-align: center;
+}
+
+/*tabela*/
+main {
+  background: #fff;
+}
+
+.page-title {
+  padding: 25px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  margin: 0 25px;
+}
+
+section {
+  flex: 1;
+}
+
+table {
+  margin-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  border-bottom: 3px solid #6e6d6d;
+}
+
+th {
+  text-align: left;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+tbody tr {
+  border-bottom: 3px solid #eee;
+}
+
+tbody tr:last-child {
+  border: none;
+}
+
+td {
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product img {
+  border-radius: 10px;
+}
+
+.info-tab {
+  margin-left: 20px;
+}
+
+.nome {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.descri {
+  color: #777;
+}
+
+.qty {
+  background: #e0e0e08c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  border-radius: 20px;
+  width: 80%;
+  overflow: hidden;
+  height: 30px;
+}
+
+.qty button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 0 15px;
+  font-size: 100px;
+  height: 100%;
+}
+
+.qty button:hover {
+  background: #ddd;
+}
+
+span {
+  margin: 0 10px;
+}
+
+.del {
+  background: #e0e0e08c;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.del:hover {
+  background: #ddd;
+}
+
+aside {
+  margin-left: 25px;
+}
+
+.box {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background: #ddd;
+}
+
+.header {
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.info {
+  padding: 16px;
+
+}
+
+.info div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.info button {
+  color: green;
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+}
+
+.info button:hover {
+  color: rgb(28, 187, 55);
+}
+
+.footer {
+  padding: 15px 20px;
+  background: #ccc;
+  font-size: 18px;
+
+}
+
+.finalizar {
+  background: green;
+  color: white;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+.finalizar:hover {
+  background: rgb(28, 187, 55);
+}
+
+
+
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+
+  footer {
+
+    position: relative;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  nav {
+
+    align-items: center;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  aside {
+    margin-left: 0;
+  }
+
+  .img {
+    height: 60px;
+  }
+
+  table {
+    display: table;
+    font-size: 0.9rem;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tbody tr {
+    display: table-row;
+  }
+
+  tbody td {
+    display: table-cell;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  nav {
+    text-align: center;
+  }
+
+  .content {
+    margin: 0 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .finalizar {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

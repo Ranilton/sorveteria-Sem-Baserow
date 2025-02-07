@@ -1,0 +1,53 @@
+Aqui está uma sugestão de paleta de cores que combina com uma logomarca azul e harmoniza com os produtos da sua sorveteria, incluindo sorvetes, açaí e milkshakes. A paleta equilibra frescor, doçura e tropicalidade:
+
+
+
+### **Como Usar as Cores**
+- **Logo e identidade principal**: Use o azul claro e escuro.
+- **Decoração interna**: Misture tons de rosa, amarelo e roxo com elementos brancos e cinzas para criar um ambiente acolhedor e divertido.
+- **Materiais gráficos (menus, embalagens)**: Use combinações vibrantes (ex.: azul com rosa ou roxo com amarelo) para destacar os produtos.
+
+Essa paleta é versátil, alegre e moderna, refletindo a energia de uma sorveteria cheia de opções deliciosas!
+
+
+:root {
+  /*Azul (Base da Identidade Visual)*/
+    --azul_claro: #4DB6E1; /*Remete a frescor e combina com a logo*/
+    --zul_escuro: #1E88E5;/*Para elementos de destaque ou texto*/
+  /*Cores de Sorvetes e Milkshakes*/
+    --rosa_chiclete: #FF80AB; /*Transmite doçura e apelo visual*/
+    --amarelo_creme: #FFD54F; /*Lembra baunilha e caramelo*/
+    --marron_claro: #8D6E63; /*Associado ao chocolate ou doce de leite*/
+  /*Cores do Açaí e Frutas*/
+    --Roxo_vibrante: #7E57C2; /*Representa o açaí.*/
+    --Verde_tropical: #81C784; /*Sugere frescor e frutas naturais como guaraná ou kiwi.*/
+  /*Neutros de Contraste*/
+    --Branco_gelo: #F9F9F9; /*Para dar leveza e espaço visual*/
+    --Cinza_suave: #E0E0E0; /*Para elementos secundários, como menus e fundos*/
+  }
+
+
+amarelo : #FFD54F;
+rosa: #FF80AB;
+marrom: #512813:
+
+    --rosa_chiclete: #FF80AB; /*Transmite doçura e apelo visual*/
+    --amarelo_creme: #FFD54F; /*Lembra baunilha e caramelo*/
+    --marron_claro: #8D6E63; /*Associado ao chocolate ou doce de leite*/
+
+
+
+Combinações de cores individuais
+
+Branco: Combina com tudo, principalmente com azul, vermelho e preto;
+Cinza: Combina com vermelho, violeta, rosa e azul;
+Rosa: Combina com marrom, branco, verde menta, oliva, cinza, turquesa, azul claro;
+Fúcsia (rosa escuro): Combina com cinza, amarelo amarronzado, lima, verde menta e marrom;
+Vermelho: Combina com amarelo, branco, fulvo, verde, azul e preto;
+Marrom: Combina com creme, rosa, verde, bege e ciano brilhante;
+Laranja: Combina como ciano, azul, lilás, violeta, branco e preto;
+Amarelo: Combina com azul, lilás, ciano claro, violeta, cinza e preto;
+Verde: Combina com marrom dourado, laranja, verde salada, amarelo, marrom, cinza, creme, preto e branco creme;
+Ciano: Combina com vermelho, cinza, marrom, laranja, rosa, branco e amarelo;
+Lilás: Combina com laranja, rosa, violeta escuro, amarelo e branco;
+Preto é a cor universal: Combina com todas as outras cores, especialmente com laranja, rosa, verde salada, branco, vermelho ou amarelo.

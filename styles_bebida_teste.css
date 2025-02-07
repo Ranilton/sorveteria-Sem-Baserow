@@ -1,0 +1,288 @@
+body,
+section {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--branco_gelo);
+}
+
+section {
+  display: grid;
+  /* ATUALIZADO */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /* ATUALIZADO */
+  gap: 10px;
+  /* ATUALIZADO */
+  padding: 10px;
+  /* ATUALIZADO */
+  justify-content: center;
+  /* ATUALIZADO */
+  border: 5px solid #ccc;
+  background-color: var(--white);
+  place-items: center;
+  /* ATUALIZADO: Centraliza os cartões */
+}
+
+.cardGA {
+  width: 100%;
+  /* ATUALIZADO */
+  max-width: 350px;
+  /* ATUALIZADO */
+  display: flex;
+  flex-direction: column;
+  /* ATUALIZADO */
+  border-radius: 10px;
+  border: 2px solid #d84400;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* ATUALIZADO */
+}
+
+.cardGA .card1 {
+  width: 100%;
+  /* ATUALIZADO */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardGA .card2 {
+  width: 100%;
+  /* ATUALIZADO */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* ATUALIZADO */
+  padding: 10px;
+  /* ATUALIZADO */
+  border-top: 1px solid black;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* ATUALIZADO */
+  text-align: center;
+  /* ATUALIZADO */
+}
+
+.card3 p {
+  font-size: 15pt;
+  margin: 5px 0;
+  /* ATUALIZADO */
+}
+
+.imgcard {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.qty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  height: 30px;
+  border: 1px solid #e4050598;
+  border-radius: 5px;
+}
+
+.qty button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-size: 50px;
+  height: 50%;
+  background: var(--marrom_claro);
+  color: var(--amarelo_creme);
+}
+
+.qty button:hover {
+  background: var(--white);
+}
+
+.qty i {
+  font-size: 16px;
+}
+
+.qty span {
+  margin: 0 5px;
+  border-bottom: 1px solid;
+}
+
+
+.img {
+  height: 80px;
+  border-radius: 50px;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(to right, var(--azul_escuro) 30%, var(--azul_claro) 50%);
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin-right: 20px;
+  color: var(--white);
+  font-weight: bolder;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.shopping {
+  background-color: var(--roxo_vibrante);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  width: 25vh;
+  height: 50px;
+  margin: 15px;
+}
+
+.car {
+  width: 50px;
+  height: 50px;
+
+}
+
+.shopping:hover {
+  background-color: var(--verde_tropical);
+}
+
+/* js teste */
+/* const baserowUrl = "https://api.baserow.io/api/database/rows/table/437308/?user_field_names=true";
+
+const baserowToken = "9k7yhOTZwguQ1WJGdNK1NGXGDAcfJpxU";
+
+async function fetchData() {
+    try {
+        const response = await fetch(baserowUrl, {
+            headers: {
+                "Authorization": `Token ${baserowToken}`,
+                "Content-Type": "application/json"
+            }
+        });
+        
+        const data = await response.json();
+        const records = data.results.filter(record => record.Ativos);
+        
+        if (records.length > 0) {
+            const firstRecord = records[0];
+            
+            document.querySelector(".mobile").textContent = firstRecord.Nomes;
+            document.querySelector(".desk").textContent = firstRecord.Nomes;
+            document.querySelector(".notas").textContent = firstRecord.Notas;
+            document.querySelector(".valores").textContent = firstRecord.Valores;
+            document.querySelector("#imagem_A").src = firstRecord.Imagens;
+            document.querySelector("#imagem_A").alt = `Imagem de ${firstRecord.Nomes}`;
+            document.querySelector("#imagem_B").src = firstRecord.Imagens_2;
+            document.querySelector("#imagem_B").alt = `Imagem de ${firstRecord.Nomes}`;
+            
+            // Se houver Notas_2 e Valores_2, atualiza os elementos correspondentes
+            document.querySelectorAll(".notas")[1].textContent = firstRecord.Notas_2;
+            document.querySelectorAll(".valores")[1].textContent = firstRecord.Valores_2;
+        } else {
+            console.log("Nenhum dado ativo encontrado.");
+        }
+    } catch (error) {
+        console.error("Erro ao buscar dados do Baserow:", error);
+    }
+}
+
+fetchData(); */
+
+
+
+/* HTML teste */
+/* <!-- -----------cards-------------- -->
+<!-- <div class="card_org">
+  <h3 id="nomes" class="mobile">Nomes</h3>
+
+  <div class="cardG">
+    <h3 id="nomes" class="desk">Nomes</h3>
+
+    <div id="card_A" class="card_A">
+      <input type="checkbox" name id>
+      <img id="imagens" class="imgcard"
+        src="Imagens"
+        alt>
+      <div class="cardValor">
+        <div class="p">
+          <p id="Notas">Notas</p>
+          <p id="valores">Valores</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="card_B" class="card_B">
+      <input type="checkbox" name id>
+      <img id="imagens_2" class="imgcard"
+        src="Imagens_2"
+        alt>
+      <div class="cardValor">
+        <div class="p">
+          <p id="notas_2">Notas_2</p>
+          <p id="valores_2">valores_2</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div> --> */
+
+/* js */
+/* const data = await response.json();
+    const records = data.results.filter(record => record.Ativos);
+
+    const container = document.querySelector(".cardG");
+    container.innerHTML = "";
+
+    records.forEach(record => {
+      const cardOrg = document.createElement("div");
+      cardOrg.classList.add("card_org");
+
+      cardOrg.innerHTML = `
+              <div class="card_org">
+                <h3 class="mobile">${record.Nomes}</h3>
+
+                <div class="cardG">
+                    <h3 class="desk">${record.Nomes}</h3>
+
+
+
+                    const data = await response.json();
+                    const records = data.results.filter(record => record.Ativos);
+                    
+                    const section = document.querySelector("section");
+                    section.innerHTML = "";
+                    
+
+                    records.forEach(record => {
+                        const cardOrg = document.createElement("div");
+                        
+                        cardOrg.innerHTML = `
+                            <div class="card_org">
+                                <h3 class="mobile">${record.Nomes}</h3>
+                                <div class="cardG">
+                                    <h3 class="desk">${record.Nomes}</h3> */

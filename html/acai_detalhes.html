@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="/assets/icon_log.png" />
+        <link rel="stylesheet" href="/css/styles_acai.css">
+        <link rel="stylesheet" href="/css/General_Styles.css">
+        <title>Açaí</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img class="img" src="/assets/Vasconcellos_Acai_Transparent.PNG"
+                    alt="SorveMar" />
+                <h1 class="logo">
+                    Sorveteria <br />
+                    Vasconcelos
+                </h1>
+
+                <a href="index.html"><img class="img" src="/assets/icon_log.png"
+                        alt="SorveMar" /></a>
+            </nav>
+        </header>
+        <h1>Refresque-se com a energia do açaí!<br><img src="/assets/Açai.png"
+                alt style="width: 100px;"><a href="../bebidas/bebidas_de_acai.html"><button
+                    style="border-radius: 5px 20px;"><h4>Temos Guaraná do Amazonia</h4></button></a></h1>
+        <section>
+            <div class="TipoAcai">
+                <label for="acai-tamanho">Monte Seu Açaí:</label>
+                <select id="acai-tamanho" onchange="mostrarAcai()">
+                    <option value>Selecione</option>
+                    <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                </select>
+                <!--mostra o tamanho selecionado-->
+                <div class="ver_select">
+                    <div>
+                        <h2 id="acai-volume">Médio - 300 ml</h2>
+                        <h3 id="acai-preco">R$ 0,00</h3>
+                        <p id="acai-notas">notas</p>
+                    </div>
+                    <img id="acai-imagem" src="/assets/açaí.png"
+                        alt="Imagem do Açaí">
+                </div>
+                <label for="acai-quantidade">Quantidade:</label>
+                <input type="number" id="acai-quantidade" min="1" value="1">
+
+                <!--<button class="mostrar" onclick="toggleSabores('Médio - 300 ml')">Mostrar/Ocultar
+                Sabores</button>-->
+
+            </div>
+
+            <!--todos o complementos-->
+            <div class="complementos_todos">
+                <!--frutas-->
+                <div class="complementos" id="fruts">
+                    <label class="titulos">Frutas (R$ 1,00):</label>
+                    <div id="frutas">
+                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                    </div>
+                </div>
+                <!--coberturas/caldas-->
+                <div class="complementos" id="coberturas">
+                    <label class="titulos">Coberturas/Caldas:</label>
+                    <div id="caldas">
+                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                    </div>
+                </div>
+                <!--complementos-->
+                <div class="complementos" id="compl">
+                    <label class="titulos">Complementos:</label>
+                    <div id="complementos">
+                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                    </div>
+                </div>
+                <!--complementos premium-->
+                <div class="complementos" id="compl_premium">
+                    <label class="titulos">Complementos Premium (R$
+                        3,00):</label>
+                    <div id="complementos_premium">
+                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <div class="valorTotal">
+                    <h3>valor Total=</h3>
+                    <h3>R$ 0,00</h3>
+                    <div id="acai_escolhido">
+                        <!--o açaí escolhido deve ser mostrado aqui-->
+                    </div>
+                </div>
+                <button class="shopping">Salvar no Carrinho</button>
+
+                <a href="carrinho.html">
+                    <button class="shopping"><img class="car"
+                            src="/assets/shopping.png" alt="Carrinho"></button>
+                </a>
+            </div>
+        </section>
+        <script src="/js/script_acai.js"></script>
+    </body>
+
+</html>

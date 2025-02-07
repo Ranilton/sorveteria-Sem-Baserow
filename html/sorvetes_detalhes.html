@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon_log.png" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet">
+		<link rel="stylesheet" href="/css/styles_sorvetes.css">
+		<link rel="stylesheet" href="/css/General_Styles.css">
+		<title>Sorvetes</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<img class="img" src="/assets/sorvemar.PNG" alt="SorveMar" />
+				<h1 class="logo">
+					Sorveteria <br />
+					Vasconcelos
+				</h1>
+				<a href="index.html"><img class="img" src="/assets/icon_log.png"
+						alt="SorveMar" />
+				</a>
+			</nav>
+		</header>
+		<h1>ESCOLHA O SORVETE</h1>
+
+		<section>
+			<!--tipo-->
+			<div class="TipoSorvete">
+				<label for="sorvete-tamanho">Escolha o Sorvete:</label>
+				<select id="sorvete-tamanho" onchange="mostrarEscolha()">
+					<option value>Selecione</option>
+					<!-- ... Opções dinâmicas serão adicionadas aqui -->
+				</select>
+				<!--mostra a escolha-->
+				<div class="ver_select">
+					<img id="imagem" src="/assets/copinho.png" alt="imagem do sorvete">
+				</div>
+				<p id="notas">notas</p>
+				<label for="copinho-quantidade">Quantidade:</label>
+				<input type="number" id="copinho-quantidade" min="1" value="1">
+
+				<!--<button class="mostrar" onclick="toggleSabores('copinho')">Mostrar/Ocultar
+					Sabores</button>-->
+			</div>
+			<!-- sabores-->
+			<div class="sabor_1e2">
+				<!-- sabores-->
+				<div class="sabor" id="Sabores">
+					<label class="titulos">Escolha os sabores:</label>
+					<div class="sab-trad" id="Sabores_1">
+						<!-- ... Opções dinâmicas serão adicionadas aqui -->
+					</div>
+				</div>
+				<!-- sabores Especiais-->
+				<div class="sabor" id="Sabores_Especiais">
+					<label class="titulos">Escolha sabores Especiais (R$ 1,00 a mais):</label>
+					<div class="sab-esp" id="Sabores_2">
+						<!-- ... Opções dinâmicas serão adicionadas aqui -->
+					</div>
+				</div>
+			</div>
+
+			<div class="sabor_1e2">
+				<!-- sabores-->
+				<div class="sabor" id="Sabores">
+					<label class="titulos">Coberturas:</label>
+					<div class="sab-trad" id="cobert">
+						<!-- ... Opções dinâmicas serão adicionadas aqui -->
+					</div>
+				</div>
+				<!-- sabores Especiais-->
+				<div class="sabor" id="Sabores_Especiais">
+					<label class="titulos">Adicionais (R$ 1,00 cada):</label>
+					<div class="sab-esp" id="adic">
+						<!-- ... Opções dinâmicas serão adicionadas aqui -->
+					</div>
+				</div>
+			</div>
+
+			<div class="final">
+				<div>
+					<h1 id="volume">Copinho</h1>
+					<!-- select aparece aquí -->
+				</div>
+				<div class="valorTotal">
+					<h3>valor Total=</h3>
+					<h3 id="preco">R$ 0,00</h3>
+
+					<div id="sabores">
+						<!--os sorvetes escolhidos deve ser mostrado aqui-->
+					</div>
+				</div>
+
+				<button class="shopping">Salvar no Carrinho</button>
+				<a href="carrinho.html">
+					<button class="shopping">
+						<img class="car" src="/assets/shopping.png" alt="Carrinho">
+					</button>
+				</a>
+
+			</div>
+
+		</section>
+
+		<span class="marcado">Nenhum</span>
+		<span class="marcadopreco">12,00</span>
+		<footer>
+			<p>&copy; 2024 Sorveteria
+				Vasconcelos - Todos os direitos reservados</p>
+		</footer>
+		<script src="/js/script_sorvete.js">
+			
+		</script>
+	</body>
+
+</html>

@@ -1,2 +1,3 @@
-# sorveteria-Sem-Baserow
-sem banco de dados
+# sorveteria-com-Baserow
+
+usando o banco de dados baserow. https://baserow.io/

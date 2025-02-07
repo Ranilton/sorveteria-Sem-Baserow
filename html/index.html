@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sorveteria</title>
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="/assets/icon_log.png" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/css/General_Styles.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img class="img" src="/assets/sorvemar.PNG" alt="SorveMar" />
+                <h1 class="logo">
+                    Sorveteria <br />
+                    Vasconcelos
+                </h1>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li class="home"
+                        onclick="scrollToSection('#home')"><a>Home</a></li>
+                    <li
+                        onclick="scrollToSection('#sorvetes')"><a>Sorvetes</a></li>
+                    <li onclick="scrollToSection('#acai')"><a>Açaí</a></li>
+                    <li
+                        onclick="scrollToSection('#milkshake')"><a>Milkshake</a></li>
+                    <li class="sobre"
+                        onclick="scrollToSection('#sobre')"><a>Sobre</a></li>
+                    <li
+                        onclick="scrollToSection('#contato')"><a>Contato</a></li>
+
+                    <li class="carrinho"><a
+                            href="../carrinho de compras/carrinho.html"><img
+                                class="carrinho" src="/assets/shopping.png"
+                                alt="SorveMar" /></a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero" id="home">
+            <h2 class="gradient-text">O melhor sorvete e açaí da cidade!</h2>
+            <p>Venha se deliciar com nossos produtos únicos.</p>
+            <button onclick="scrollToSection('#sorvetes')">
+                Explorar Sabores de Sorvete
+            </button>
+            <button onclick="scrollToSection('#acai')">
+                Explorar Sabores de Açaí
+            </button>
+            <button onclick="scrollToSection('#milkshake')">
+                Explorar Sabores de milkshake
+            </button>
+        </section>
+
+        <article>
+            <section id="sorvetes" class="apresentacao_sorv">
+                <h2>
+                    Vai um Sorvete,<br />
+                    Gelado e delicioso?
+                </h2>
+                <img
+                    src="https://png.pngtree.com/png-vector/20240718/ourmid/pngtree-chocolate-ice-cream-balls-png-image_13141303.png"
+                    alt="Sorvete de Morango" />
+                <p>Diversos Sabores - Peça já o seu!</p>
+                <a href="sorvetes_detalhes.html">
+                    <h3>Vai um sorvete?</h3>
+                </a>
+            </section>
+
+            <section id="acai" class="apresentacao_acai">
+                <h2>Sabe que horas são?</h2>
+                <img
+                    src="https://png.pngtree.com/png-vector/20240628/ourmid/pngtree-aa-in-a-transparent-plastic-cup-filled-with-strawberry-banana-confectionery-png-image_12721306.png"
+                    alt="Açaí Tradicional" />
+                <p>Não perca tempo, Faça o seu pedido!</p>
+                <a href="acai_detalhes.html">
+                    <h3>Hora do Açaí!</h3>
+                </a>
+            </section>
+
+            <section id="milkshake" class="apresentacao_milk">
+                <h2>Perça o seu Milkshake</h2>
+                <img
+                    src="https://png.pngtree.com/png-vector/20230926/ourmid/pngtree-a-milkshake-with-a-strawberry-and-ice-cream-cone-png-image_10147634.png"
+                    alt="Açaí Tradicional" />
+                <p>Você merece o Melhor Milkshake</p>
+                <a href="milkshake_detalhes.html">
+                    <h3>Diversos Sabores</h3>
+                </a>
+            </section>
+        </article>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre Nós</h2>
+            <p>
+                Na Sorvetreria Vasconcelos&reg, acreditamos que tanto
+                sorvete
+                quanto
+                açaí são mais do que sobremesas – são experiências
+                deliciosas.
+                Todos os
+                nossos produtos são feitos com ingredientes frescos e de
+                alta
+                qualidade.
+            </p>
+            <h1>Horário de funcionamento</h1>
+            <p class="h">
+                Domingo - Quinta-feira: 15h às 22h <br />
+                Sexta-feira: 9h às 17h <br />
+                Sábado: 18h às 23h
+            </p>
+        </section>
+
+        <section class="contato">
+            <h2>Contato</h2>
+            <div class="redes">
+                <div>
+                    <a href="#"><img class="whats" onclick="openWhatsApp()"
+                            src="/assets/WhatsApp_Logo.png" alt="WhatsApp"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            class="inst"
+                            src="/assets/instagram-logo.png" alt="intagram"></a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Delícia Gelada - Todos os direitos reservados</p>
+        </footer>
+
+        <script src="/js/script.js"></script>
+
+    </body>
+
+</html>
