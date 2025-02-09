@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon_log.png" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet">
+		<link rel="stylesheet" href="/css/styles_sorvetes.css">
+		<link rel="stylesheet" href="/css/General_Styles.css">
+		<title>Sorvetes</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<img class="img" src="/assets/sorvemar.PNG" alt="SorveMar" />
+				<h1 class="logo">
+					Sorveteria <br />
+					Vasconcelos
+				</h1>
+				<a href="index.html"><img class="img" src="/assets/icon_log.png"
+						alt="SorveMar" />
+				</a>
+			</nav>
+		</header>
+		<h1>ESCOLHA O SORVETE</h1>
+
+		<section>
+			<!--tipo-->
+			<div class="TipoSorvete">
+				<label for="sorvete-tamanho">Escolha o Sorvete:</label>
+				<select id="sorvete-tamanho" onchange="mostrarEscolha()">
+					<option value>Selecione</option>
+					<option value="Copinho Pequeno" data-price="5.00" nota="1">Copinho
+						Pequeno</option>
+					<option value="Copinho Médio" data-price="9.00" nota="2">Copinho
+						Médio</option>
+					<option value="Copinho Grande" data-price="12.00" nota="3">Copinho
+						Grande</option>
+					<option value="Casquinha Pequeno" data-price="7.00" nota="1">Casquinha
+						Pequeno</option>
+					<option value="casquinha Médio" data-price="10.00" nota="2">Casquinha
+						Médio</option>
+					<option value="Cestinha -2 Sabores" data-price="10.00" nota="2">Cestinha - 2
+						Sabores</option>
+					<option value="Cestinha -3 Sabores" data-price="13.00" nota="3">Cestinha - 3
+						Sabores</option>
+				</select>
+				<!--mostra a escolha-->
+				<div class="ver_select">
+					<img id="imagem" src="/assets/copinho.png" alt="imagem do sorvete">
+				</div>
+				<p id="notas">0</p>
+				<label for="copinho-quantidade">Quantidade:</label>
+				<input type="number" id="copinho-quantidade" min="1" value="1">
+
+				<!--<button class="mostrar" onclick="toggleSabores('copinho')">Mostrar/Ocultar
+					Sabores</button>-->
+			</div>
+			<!-- sabores-->
+			<div class="sabor_1e2">
+				<!-- sabores-->
+				<div class="sabor" id="Sabores">
+					<label class="titulos">Escolha os sabores:</label>
+					<div class="sab-trad" id="Sabores_1">
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Creme"
+									class="sabor-checkbox"><span>Creme</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Banana"
+									class="sabor-checkbox"><span>Banana</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Chocolate"
+									class="sabor-checkbox"><span>Chocolate</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Morango"
+									class="sabor-checkbox"><span>Morango</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Limão"
+									class="sabor-checkbox"><span>Limão</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Milho"
+									class="sabor-checkbox"><span>Milho</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Pavê"
+									class="sabor-checkbox"><span>Pavê</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Amendoim"
+									class="sabor-checkbox"><span>Amendoim</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Menta"
+									class="sabor-checkbox"><span>Menta</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Unicórnio"
+									class="sabor-checkbox"><span>Unicórnio</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Doce de Leite"
+									class="sabor-checkbox"><span>Doce de Leite</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Creme com Passas"
+									class="sabor-checkbox"><span>Creme com Passas</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Bubaloo"
+									class="sabor-checkbox"><span>Bubaloo</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Napolitano"
+									class="sabor-checkbox"><span>Napolitano</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Nata Goiaba"
+									class="sabor-checkbox"><span>Nata Goiaba</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Sonho de Valsa"
+									class="sabor-checkbox"><span>Sonho de Valsa</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Flocos"
+									class="sabor-checkbox"><span>Flocos</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Coco"
+									class="sabor-checkbox"><span>Coco</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Tapioca"
+									class="sabor-checkbox"><span>Tapioca</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Coco Zero"
+									class="sabor-checkbox"><span>Coco Zero</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+					</div>
+				</div>
+				<!-- sabores Especiais-->
+				<div class="sabor" id="Sabores_Especiais">
+
+					<label class="titulos">Escolha sabores Especiais (R$ 1,00 a mais):</label>
+					<div class="sab-esp" id="Sabores_2">
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Flores Negras"
+									class="sabor-checkbox-espec"><span>Flores Negras</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Toff"
+									class="sabor-checkbox-espec"><span>Toff</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Ameixa"
+									class="sabor-checkbox-espec"><span>Ameixa</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Cajá"
+									class="sabor-checkbox-espec"><span>Cajá</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Maracujá"
+									class="sabor-checkbox-espec"><span>Maracujá</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Mangaba"
+									class="sabor-checkbox-espec"><span>Mangaba</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Ninho"
+									class="sabor-checkbox-espec"><span>Ninho</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Ninho com Nutella"
+									class="sabor-checkbox-espec"><span>Ninho com Nutella</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Prestígio"
+									class="sabor-checkbox-espec"><span>Prestígio</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Graviola"
+									class="sabor-checkbox-espec"><span>Graviola</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Malhação"
+									class="sabor-checkbox-espec"><span>Malhação</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Laka"
+									class="sabor-checkbox-espec"><span>Laka</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Tapioca"
+									class="sabor-checkbox-espec"><span>Tapioca</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Chokito"
+									class="sabor-checkbox-espec"><span>Chokito</span>
+							</div>
+							<div class="qty">
+								<button class="decrement"><i class="material-icons">remove</i></button>
+								<span class="quantidade">1</span>
+								<button class="increment"><i class="material-icons">add</i></button>
+							</div>
+						</label>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="sabor_1e2">
+				<!-- sabores-->
+				<div class="sabor" id="Sabores">
+					<label class="titulos">Coberturas:</label>
+					<div class="sab-trad" id="cobert">
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Açaí"><span>Açaí</span>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Azedinha"><span>Azedinha</span>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<!-- sabores Especiais-->
+				<div class="sabor" id="Sabores_Especiais">
+					<label class="titulos">Adicionais (R$ 1,00 cada):</label>
+					<div class="sab-esp" id="adic">
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Amendoin"><span>Amendoin</span>
+							</div>
+						</label>
+
+						<label>
+							<div style="display: flex; align-items: center;">
+								<input type="checkbox" value="Canudo Wefer"><span>Canudo Wefer</span>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div>
+				<span class="marcado">Nenhum</span>
+				<span class="preco">12,00</span>
+			</div> -->
+			<div class="final">
+				<div>
+					<h1 class="volume">Copinho</h1>
+					<span class="marcado">Nenhum</span>
+					<span class="preco">12,00</span>
+				</div>
+				
+				<!-- <div class="valorTotal">
+					<h3>valor Total=</h3>
+					<h3 id="preco">R$ 0,00</h3>
+					<div id="sabores"> -->
+						<!--os sorvetes escolhidos deve ser mostrado aqui-->
+					<!-- </div>
+				</div> -->
+
+				<button class="shopping">Salvar no Carrinho</button>
+				<a href="carrinho.html">
+					<button class="shopping">
+						<img class="car" src="/assets/shopping.png" alt="Carrinho">
+					</button>
+				</a>
+
+			</div>
+
+		</section>
+
+		<footer>
+			<p>&copy; 2024 Sorveteria
+				Vasconcelos - Todos os direitos reservados</p>
+		</footer>
+		<script src="/js/script_sorvete.js">
+			
+		</script>
+	</body>
+
+</html>
