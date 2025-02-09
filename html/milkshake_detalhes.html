@@ -32,55 +32,360 @@
                 <label for="milk-tamanho">Milkshake:</label>
                 <select id="milk-tamanho" onchange="mostrarMilks()">
                     <option value>Selecione</option>
-                    <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                    <option value="Milkshake 300ml" data-price="12.00"
+                        nota="2">Milkshake 300ml</option>
+                    <option value="Milkshake 500ml" data-price="17.00"
+                        nota="3">Milkshake 500ml</option>
+                    <option value="Milkshake Especial 300ml" data-price="15.00"
+                        nota="2">Milkshake Especial 300ml</option>
+                    <option value="Milkshake Especial 500ml" data-price="20.00"
+                        nota="3">Milkshake Especial 500ml</option>
                 </select>
+
                 <div class="ver_select">
-                    <div>
-                        <h1 id="milk-volume">Milkshake</h1>
-                        <h3 id="milk-preco">R$ 0,00</h3>
-                        <p id="milk-notas">notas</p>
-                    </div>
                     <img id="milk-imagem" src="/assets/milkshake.png"
                         alt="imagem do Milkshake">
                 </div>
-
+                <p id="notas">notas</p>
                 <label for="milk-quantidade">Quantidade:</label>
                 <input type="number" id="milk-quantidade" min="1" value="1">
 
             </div>
             <!--milkshake sabores-->
-            <div class="ingredientes_1">
+            <div class="ingredientes_1 saborMilkshake">
                 <div class="ingredientes">
                     <label class="titulos">Escolha os Sabores:</label>
                     <div class="sab" id="Sabores">
-                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Bananito">Bananito
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Banana e Ninho">Banana e Ninho
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Chocolate">Chocolate
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Unicórnio">Unicórnio
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Banana">Banana
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Prestígio Menta">Prestígio Menta
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Doce de Leite">Doce de Leite
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Chokito">Chokito
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Sonho de Valsa">Sonho de Valsa
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Pavê">Pavê
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Bubaloo">Bubaloo
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Tropical">Tropical
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Napolitano">Napolitano
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Limão">Limão
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Milho Verde">Milho Verde
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Nata Goiaba">Nata Goiaba
+                            </div>
+                        </label>
+
                     </div>
                 </div>
-            </div>
-
-            <div class="ingredientes_1">
                 <div class="ingredientes">
                     <label class="titulos">Coberturas:</label>
                     <div class="sab" id="Coberturas">
-                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Açaí">Açaí
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Azedinha">Azedinha
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Blue ice">Blue
+                                ice
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Caramelo">Caramelo
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Chiclete">Chiclete
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Chocolate">Chocolate
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Maracujá">Maracujá
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Menta">Menta
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Melancia">Melancia
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Morango">Morango
+                            </div>
+                        </label>
+                        <label>
+                            <div
+                                style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Kiwi">Kiwi
+                            </div>
+                        </label>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <div class="valorTotal">
-                    <h3>valor Total=</h3>
-                    <h3>R$ 0,00</h3>
-                    <div id="milk_escolhido">
-                        <!--o milk escolhido deve ser mostrado aqui-->
+            <div class="ingredientes_1 saborMilkshakeEspecial">
+                <div class="ingredientes">
+                    <label class="titulos">Escolha os Sabores:</label>
+                    <div class="sab" id="Sabores">
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Toff">Toff
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Chokito">Chokito
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Sonho de Valsa">Sonho de Valsa
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Ninho Mais">Ninho
+                                Mais
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Ninho Trufado">Ninho Trufado
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Floresta Negra">Floresta Negra
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Amora">Amora
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Maracujá">Maracujá
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Morango">Morango
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Tapioca">Tapioca
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Laka">Laka
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" value="Graviola">Graviola
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Brigadeiro">Brigadeiro
+                            </div>
+                        </label>
                     </div>
                 </div>
+                <div class="ingredientes">
+                    <label class="titulos">Coberturas:</label>
+                    <div class="sab" id="Coberturas">
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Crema de Avelã">Crema de Avelã
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Creme Branco">Creme Branco
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Creme de Cacau">Creme de Cacau
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Mouse de Liamo">Mouse de Liamo
+                            </div>
+                        </label>
+                        <label>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox"
+                                    value="Mouse de Maracujá">Mouse de Maracujá
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="final">
+                <div>
+                    <h1 class="volume">Copinho</h1>
+                    <span class="marcado">Nenhum</span>
+                    <span class="marcadopreco">12,00</span>
+
+                    <h1 id="milk-volume">Milkshake</h1>
+                </div>
+
+                <!-- <div class="valorTotal">
+                    <h3>valor Total=</h3>
+                    <h3>R$ 0,00</h3>
+                    <div id="milk_escolhido"> -->
+                        <!--o milk escolhido deve ser mostrado aqui-->
+                    <!-- </div>
+                </div> -->
+
                 <button class="shopping">Salvar no Carrinho</button>
                 <a href="carrinho.html">
                     <button class="shopping"><img class="car"
                             src="/assets/shopping.png" alt="Carrinho"></button>
                 </a>
             </div>
+
+        
         </section>
 
         <script src="/js/script_milk.js"></script>

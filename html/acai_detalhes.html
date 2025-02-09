@@ -26,25 +26,28 @@
             </nav>
         </header>
         <h1>Refresque-se com a energia do açaí!<br><img src="/assets/Açai.png"
-                alt style="width: 100px;"><a href="../bebidas/bebidas_de_acai.html"><button
-                    style="border-radius: 5px 20px;"><h4>Temos Guaraná do Amazonia</h4></button></a></h1>
+                alt style="width: 100px;"><a
+                href="../bebidas/bebidas_de_acai.html"><button
+                    style="border-radius: 5px 20px;"><h4>Temos Guaraná do
+                        Amazonia</h4></button></a></h1>
         <section>
             <div class="TipoAcai">
                 <label for="acai-tamanho">Monte Seu Açaí:</label>
                 <select id="acai-tamanho" onchange="mostrarAcai()">
                     <option value>Selecione</option>
-                    <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                    <option value="Pequeno 200ml" data-price="12.00"
+                        nota="2">Pequeno 200ml</option>
+                    <option value="Médio 300ml" data-price="14.00"
+                        nota="3">Médio 300ml</option>
+                    <option value="Grande 500ml" data-price="17.00"
+                        nota="4">Grande 500ml</option>
                 </select>
                 <!--mostra o tamanho selecionado-->
                 <div class="ver_select">
-                    <div>
-                        <h2 id="acai-volume">Médio - 300 ml</h2>
-                        <h3 id="acai-preco">R$ 0,00</h3>
-                        <p id="acai-notas">notas</p>
-                    </div>
                     <img id="acai-imagem" src="/assets/açaí.png"
                         alt="Imagem do Açaí">
                 </div>
+                <p id="notas">notas</p>
                 <label for="acai-quantidade">Quantidade:</label>
                 <input type="number" id="acai-quantidade" min="1" value="1">
 
@@ -59,21 +62,109 @@
                 <div class="complementos" id="fruts">
                     <label class="titulos">Frutas (R$ 1,00):</label>
                     <div id="frutas">
-                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Banana">Banana
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Morango">Morango
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Kiwí">Kiwí
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Manga">Manga
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox" value="Uva">Uva
+                        </label>
                     </div>
                 </div>
                 <!--coberturas/caldas-->
                 <div class="complementos" id="coberturas">
                     <label class="titulos">Coberturas/Caldas:</label>
                     <div id="caldas">
-                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Leite Condensado">Leite Condensado
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Chocolate">Chocolate
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Morango">Morango
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Chiclete">Chiclete
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Açaí">Açaí
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Maracujá">Maracujá
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Caramelo">Caramelo
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Kiwí">Kiwí
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Blue ice">Blue ice
+                        </label>
                     </div>
                 </div>
                 <!--complementos-->
                 <div class="complementos" id="compl">
                     <label class="titulos">Complementos:</label>
                     <div id="complementos">
-                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Granola">Granola
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Amendoin">Amendoin
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Gotas de Chocolate">Gotas de Chocolate
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Ovo Maltine">Ovo Maltine
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Granulado">Granulado
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Jujuba">Jujuba
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox" value="MeM">M &
+                            M
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Chocobool">Chocobool
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Maxmalows">Maxmalows
+                        </label>
                     </div>
                 </div>
                 <!--complementos premium-->
@@ -81,20 +172,55 @@
                     <label class="titulos">Complementos Premium (R$
                         3,00):</label>
                     <div id="complementos_premium">
-                        <!-- ... Opções dinâmicas serão adicionadas aqui -->
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Creme de Avelã">Creme de Avelã
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Creme Branco">Creme Branco
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Creme de Chocolate">Creme de Chocolate
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Mousse de Limão">Mousse de Limão
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Mousse de Maracujá">Mousse de Maracujá
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Sorvete de Creme">Sorvete de Creme
+                        </label>
+                        <label>
+                            <input class="chec" type="checkbox"
+                                value="Chocolate Maltado">Chocolate Maltado
+                        </label>
                     </div>
                 </div>
 
             </div>
 
-            <div>
-                <div class="valorTotal">
+            <div class="final">
+                <div>
+					<h1 class="volume">Médio - 300 ml</h1>
+					<span class="marcado">Nenhum</span>
+					<span class="marcadopreco">12,00</span>
+				</div>
+                
+
+                <!-- <div class="valorTotal">
                     <h3>valor Total=</h3>
                     <h3>R$ 0,00</h3>
-                    <div id="acai_escolhido">
+                    <div id="acai_escolhido"> -->
                         <!--o açaí escolhido deve ser mostrado aqui-->
-                    </div>
-                </div>
+                    <!-- </div>
+                </div> -->
+                
                 <button class="shopping">Salvar no Carrinho</button>
 
                 <a href="carrinho.html">

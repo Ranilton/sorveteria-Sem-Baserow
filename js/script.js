@@ -11,7 +11,15 @@ function viewProduct(name, image) {
   window.location.href = url;
 }
 
-
+function scrollToSection(sectionId) {
+  const section = document.querySelector(sectionId);
+  if (section) {
+      section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+      });
+  }
+}
 
 /* aparecero menu responsivo*/
 
